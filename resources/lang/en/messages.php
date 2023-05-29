@@ -446,5 +446,6 @@ return array(
         'monthlyLimit' => 'The maximum number of leaves of this type an employee can take per month.',
         'paidStatus' => 'This leave type will be paid or unpaid for all the employees'
     ),
-    'unitDeleteError' => 'You cannot delete this unit as it is associated with finance and product items. Dissociate the unit from all items and try again.'
+    'unitDeleteError' => 'You cannot delete this unit as it is associated with finance and product items. Dissociate the unit from all items and try again.',
+    'softwareCategoryCreated' => 'Software Category Created'
 );

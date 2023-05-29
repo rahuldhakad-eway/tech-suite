@@ -149,7 +149,8 @@ return [
         'planDetails' => 'Plan Details',
         'purchaseHistory' => 'Purchase History',
         'offlinePlanChange' => 'Offline Plan Change',
-        'contactSubmit' => 'Contact Submit'
+        'contactSubmit' => 'Contact Submit',
+        'softwareCategory' => 'Software Category'
     ],
     'dashboard' => [
         'totalCompany' => 'Total Companies',
@@ -472,4 +473,9 @@ return [
     'previousPassword' => 'Same as previous password.',
     'slug' => 'Slug',
     'googleCalendarConfig' => 'Choose from right sidebar all the Google Calendar settings.',
+
+    'software-category' => [
+        'create' => 'Create Software Category'
+    ],
+    'softwareCategory' => 'Software Category'
 ];

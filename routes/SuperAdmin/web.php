@@ -46,6 +46,7 @@ use App\Http\Controllers\SuperAdmin\FrontSetting\TestimonialSettingController;
 use App\Http\Controllers\SuperAdmin\FrontSetting\FeatureTranslationSettingController;
 use App\Http\Controllers\SuperAdmin\FrontSetting\ThemeSettingController as FrontThemeSettingController;
 use App\Http\Controllers\SuperAdmin\PayFastController;
+use App\Http\Controllers\SuperAdmin\SoftwareCategoryController;
 
 Route::group(['middleware' => ['auth'], 'prefix' => 'account', 'as' => 'superadmin.'], function () {
     Route::get('impersonate/stop_impersonate', [SuperAdminController::class, 'stopImpersonate'])->name('superadmin.stop_impersonate');
@@ -71,6 +72,7 @@ Route::group(['middleware' => ['auth', 'super-admin'], 'prefix' => 'account', 'a
     Route::resource('packages', PackageController::class)->except(['show']);
 
     Route::resource('superadmin', SuperAdminController::class)->except(['show']);
+    Route::resource('software-category', SoftwareCategoryController::class)->except(['show']);
 
     Route::get('offline-plan/change-plan/{id}/{status}', [OfflinePlanChangeController::class, 'confirmChangePlan'])->name('offline-plan.confirmChangePlan');
     Route::post('offline-plan/change-plan', [OfflinePlanChangeController::class, 'changePlan'])->name('offline-plan.changePlan');
