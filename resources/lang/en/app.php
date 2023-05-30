@@ -999,4 +999,5 @@ return array (
     'editProjectNote' => 'Edit Project Note',
     'editNote' => 'Edit Note',
     'downloadFile' => 'Download File',
+    'logo' => 'Logo'
 );
